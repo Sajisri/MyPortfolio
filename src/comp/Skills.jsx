@@ -9,7 +9,7 @@ export default function Skill() {
       frontend:['HTML','CSS','JavaScript','React'],
       backend:['Java'],
       Database:['SQL'],
-      TechnicalTechnology:['System Troubleshootings','Driver updations','MS office and applications troubleshootings','ITSM']
+      TechnicalTechnology:['System Troubleshootings','Driver updations','MS office and applications troubleshootings','ITSM'],
    }
   return (
     <div >
