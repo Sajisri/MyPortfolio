@@ -1,0 +1,322 @@
+
+
+.navbar {
+    
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  font-size: 20px;
+  box-shadow: 0px 2px 2px rgb(175, 100, 161);
+  padding: 10px;
+  text-align: center;
+  background-color: rgb(35, 12, 34);
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+  background-color: #333;
+}
+  
+
+.navbar a{
+    color: white;
+    text-align: none;
+    font-size: 2rem;
+}
+.icon {
+    margin-top: 20px;
+    size: 60%;
+  }
+  
+  .icon a {
+    margin: 0 10px;
+    color: white;
+    size: 30%;
+    transition: color 0.3s ease;
+
+  }
+  
+  .icon a:hover {
+    color:gray;
+    transform: scale(1.5);
+  }
+  
+  body {
+     background: linear-gradient(to left, #3d0b34, #8f5888);
+ 
+  }
+  
+ 
+  /*button*/
+  
+  .btn1 {
+    background: transparent;
+    color: black;
+    font-size: 18px;
+    padding: 12px 24px;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+    gap: 16px;
+    
+    
+  }
+  .btn1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgb(17, 6, 16);
+    transition: all 0.3s;
+    z-index: -1;
+  }
+  .btn1:hover::before {
+    left: 0;
+  }
+  
+  .btn1:hover {
+    color: white;
+  }
+  
+  
+  /*skills*/
+  body, html {
+    
+    overflow: hidden;
+  }
+
+
+  .skillsets {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px;
+    margin: 30px;
+  }
+  
+  .category {
+    background-color: #ad69b2;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+  .skills {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .skill {
+    background-color: #350b31;
+    color: white;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .skill:hover {
+    background-color:#ad69b2;
+  }
+/* Button styles for navigation */
+
+
+  
+  /*prj*/
+  .home{
+    color:white;
+    font-size: 2rem;
+    align-items: center;
+  }
+  
+  /*education*/
+  .category1 {
+    background-color: #ad69b2;
+    padding: 5px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  .skill1 {
+    background-color: #350b31;
+    color: white;
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 5px;
+    text-align:start;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  .skill1:hover {
+    background-color: #bd42a6;
+  }
+  
+ /* about Container */
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  color:white;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Text Section */
+.about-text h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: black;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.about-text p {
+  font-size: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideUp 2s ease-in-out forwards;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from { 
+    opacity: 0;
+    transform: translateY(2px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 250px) {
+  .about-container {
+    padding: 1px;
+  }
+
+  .about-text p {
+    font-size: 10px;
+  }
+}
+/*home*/
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  background: linear-gradient(to left, #3d0b34, #8f5888);
+  color: black;
+  padding: 3px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Hero Section */
+.hero h1 {
+  font-size: 48px;
+  font-weight: bold;
+  animation: slideDown 1s ease-in-out;
+}
+
+.highlight {
+  color: white;
+}
+
+/* Typing Effect */
+.typing-text {
+  font-size: 30px;
+  font-weight: 500;
+  color: #ecf0f1;
+}
+/*acheivments*/
+
+.ache-container {
+  padding: 40px 20px;
+  text-align: center;
+  color: #333;
+}
+
+/* Section Title */
+.sec {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color:white;
+}
+
+/* Achievements List */
+.ache-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Individual Achievement Item */
+.ache-item {
+  background:#ad69b2;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 250px;
+  text-align: center;
+}
+
+.ache-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Achievement Title */
+.ache-item h2 {
+  font-size: 20px;
+  color: black;
+  margin: 10px 0;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .ache-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ache-item {
+    width: 90%;
+  }
+}
+
+
+
+
